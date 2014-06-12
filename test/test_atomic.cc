@@ -7,7 +7,7 @@
 #include <cstdio>
 #include "common/atomic.h"
 #include "common/utils.h"
-#include "common/logger_inl.h"
+#include "common/log.h"
 #include "common/lock.h"
 
 using namespace common;
@@ -44,7 +44,7 @@ int main() {
         flag = false;
         pthread_join(tid[0], NULL);
         pthread_join(tid[1], NULL);
-        SPERM_TRACE("counter=%d(expected 0)", counter);
+        TRACE("counter=%d(expected 0)", counter);
     }
     return 0;
 }

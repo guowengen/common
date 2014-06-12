@@ -4,7 +4,7 @@
 
 #include <pthread.h>
 #include "common/cond.h"
-#include "common/logger_inl.h"
+#include "common/log.h"
 #include "common/utils.h"
 
 using namespace common;

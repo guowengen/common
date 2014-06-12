@@ -10,7 +10,7 @@
 #include <queue>
 #include "common/lock.h"
 #include "common/cond.h"
-#include "common/logger_inl.h"
+#include "common/log.h"
 
 namespace common {
 

@@ -10,7 +10,7 @@
 #include <vector>
 #include <string>
 #include <cstring>
-#include "common/logger_inl.h"
+#include "common/log.h"
 
 namespace common {
 

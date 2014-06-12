@@ -40,7 +40,6 @@ static inline void fast_memcpy(void* dst, const void* src, size_t size) {
         if (size == 13) return _fast_memcpy<13>(dst, src);
         if (size == 14) return _fast_memcpy<14>(dst, src);
         if (size == 15) return _fast_memcpy<15>(dst, src);
-        if (size == 16) return _fast_memcpy<16>(dst, src);
     }
     static const void* addrs[] = {
         && B0,
@@ -303,9 +302,23 @@ static inline void fast_memcpy(void* dst, const void* src, size_t size) {
     if(size <= 255) {
         goto* addrs[size];
     B0:
-        return _fast_memcpy<0>(dst, src);
     B1:
-
+    B2:
+    B3:
+    B4:
+    B5:
+    B6:
+    B7:
+    B8:
+    B9:
+    B10:
+    B11:
+    B12:
+    B13:
+    B14:
+    B15:
+    B16:
+        return _fast_memcpy<16>(dst, src);
     B17:
         return _fast_memcpy<17>(dst, src);
     B18:

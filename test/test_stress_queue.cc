@@ -26,7 +26,7 @@ void* consumer_thread_function(void* arg) {
     while(1) {
         Item* item = NULL;
         if(!q->pop(&item, 1000)) {
-            SPERM_DEBUG("consumer Q empty");
+            DEBUG("consumer Q empty");
             continue;
         }
         delete item;
@@ -48,11 +48,11 @@ int main() {
     Q q;
     pthread_t ctid[kConsumerThread];
     pthread_t ptid[kProducerThread];
-    SPERM_DEBUG("consumer thread...");
+    DEBUG("consumer thread...");
     for(int i = 0; i < kConsumerThread; i++) {
         pthread_create(ctid + i, NULL, consumer_thread_function, &q);
     }
-    SPERM_DEBUG("producer thread...");
+    DEBUG("producer thread...");
     for(int i = 0; i < kProducerThread; i++) {
         pthread_create(ptid + i, NULL, producer_thread_function, &q);
     }

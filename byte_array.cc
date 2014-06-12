@@ -4,7 +4,7 @@
 
 #include "common/utils.h"
 #include "common/byte_array.h"
-#include "common/logger_inl.h"
+#include "common/log.h"
 
 namespace common {
 

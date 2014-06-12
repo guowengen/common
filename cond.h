@@ -14,7 +14,7 @@
 #include <cassert>
 #include <string>
 //#include "common/lock.h"
-#include "common/logger_inl.h"
+#include "common/log.h"
 #include "common/socket.h"
 #include "common/atomic.h"
 #include "common/utils.h"

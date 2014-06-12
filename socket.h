@@ -11,7 +11,7 @@
 #include <netinet/tcp.h>
 #include <arpa/inet.h>
 #include <cassert>
-#include "common/logger_inl.h"
+#include "common/log.h"
 #include "common/utils.h"
 
 namespace common {

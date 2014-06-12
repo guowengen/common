@@ -11,7 +11,7 @@
 #else
 #include "common/atomic_i386.h"
 #endif
-#include "common/logger_inl.h"
+#include "common/log.h"
 
 
 template< typename T >

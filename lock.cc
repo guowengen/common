@@ -3,7 +3,7 @@
  */
 
 #include <cassert>
-#include "common/logger_inl.h"
+#include "common/log.h"
 #include "common/lock.h"
 
 namespace common {
